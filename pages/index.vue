@@ -1,89 +1,53 @@
 <template>
   <div class="flex flex-col w-screen h-full">
     <!-- Your name, profile picture and contact -->
-    <HeadWrapper 
-      name='Your Name'
-      title='Your Job Title'
-      userImgURL='Image URL Address'
-      phone='Your Contact Number'
-      email='Your Email Contact'
+    <HeadWrapper
+      name="JXDaBoi"
+      title="Just a Uni Student"
+      userImgURL="../img/Goddess.jpg"
+      phone="+60102292811"
+      email="jingxiangdaboi@gmail.com"
     />
     <!-- About Me -->
-    <AboutWrapper 
-      aboutMe='Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, nihil. Aut sapiente ipsa fugiat quasi nisi officiis cumque, amet enim corporis. Pariatur distinctio maxime sint, ducimus quos quia nostrum atque.'
-      linkedInURL='Your LinkedIn URL Address'
-      languages='Languages'
-      nationality='Your Nationality'
-      interest='Your Interest'
+    <AboutWrapper
+      aboutMe="Just a normal university student that is alone :'("
+      linkedInURL="Your LinkedIn URL Address"
+      languages="Chinese, English"
+      nationality="Malaysian"
+      interest="Badminton, Games :)"
     />
     <!-- Working Experience -->
     <CareerWrapper>
       <template v-slot:career>
-        <Career 
-          companyName='Company Name'
-          title='Your Job Title'
-          startDate='Start Date'
-          endDate='End Date'
-          >
+        <Career companyName="XMUM" title="Degree Student" startDate="Feb 2020" endDate="NA">
           <!-- List of what you had did in the company -->
           <template v-slot:experience>
-            <ul class='text-gray-600 list-inside list-disc mt-2 px-4'>
-              <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, nihil. Aut sapiente ipsa fugiat quasi nisi officiis cumque, amet enim corporis. Pariatur distinctio maxime sint, ducimus quos quia nostrum atque.</li>
-              <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, nihil. Aut sapiente ipsa fugiat quasi nisi officiis cumque, amet enim corporis. Pariatur distinctio maxime sint, ducimus quos quia nostrum atque.</li>
-              <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, nihil. Aut sapiente ipsa fugiat quasi nisi officiis cumque, amet enim corporis. Pariatur distinctio maxime sint, ducimus quos quia nostrum atque.</li>
-            </ul>
-          </template>
-        </Career>
-        
-        <Career 
-          companyName='Company Name'
-          title='Your Job Title'
-          startDate='Start Date'
-          endDate='End Date'
-          >
-          <!-- List of what you had did in the company -->
-          <template v-slot:experience>
-            <ul class='text-gray-600 list-inside list-disc mt-2 px-4'>
-              <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, nihil. Aut sapiente ipsa fugiat quasi nisi officiis cumque, amet enim corporis. Pariatur distinctio maxime sint, ducimus quos quia nostrum atque.</li>
-              <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, nihil. Aut sapiente ipsa fugiat quasi nisi officiis cumque, amet enim corporis. Pariatur distinctio maxime sint, ducimus quos quia nostrum atque.</li>
-              <li>Lorem, ipsum dolor sit amet consectetur adipisicing elit. A, nihil. Aut sapiente ipsa fugiat quasi nisi officiis cumque, amet enim corporis. Pariatur distinctio maxime sint, ducimus quos quia nostrum atque.</li>
+            <ul class="text-gray-600 list-inside list-disc mt-2 px-4">
+              <li>DMT Student</li>
+              <li>Learning languagues such as C/C++, Java, Python and Ruby</li>
             </ul>
           </template>
         </Career>
       </template>
     </CareerWrapper>
     <!-- Achievement -->
-    <AchievementWrapper 
-      project='Number of Project'
-      client='Number of Happy Clients'
-      award='Number of Awards'
+    <AchievementWrapper
+      project="Number of Project 5"
+      client="Number of Happy Clients 5"
+      award="Number of Awards 2"
     />
     <!-- Portfolio -->
     <PortfolioWrapper>
-        <template v-slot:portfolio>
-          <div class='grid grid-cols-1 md:grid-cols-3'>
-            <ProjectCard 
-              imgUrl='../img/github.png'
-              name='Project Name'
-              project='Project Type'
-              projectURL='https://github.com'
-              />
-
-              <ProjectCard 
-              imgUrl='../img/github.png'
-              name='Project Name'
-              project='Project Type'
-              projectURL='https://github.com'
-              />
-              
-              <ProjectCard 
-              imgUrl='../img/github.png'
-              name='Project Name'
-              project='Project Type'
-              projectURL='https://github.com'
-              />
-          </div>
-        </template>
+      <template v-slot:portfolio>
+        <div class="grid grid-cols-1 md:grid-cols-3">
+          <ProjectCard
+            imgUrl="../img/github.png"
+            name="Guild Plugin"
+            project="Minecraft Plugin"
+            projectURL="https://github.com"
+          />
+        </div>
+      </template>
     </PortfolioWrapper>
   </div>
 </template>
@@ -92,8 +56,8 @@
 export default {
   head() {
     return {
-      title: 'Your Name'
-    }
+      title: "A Normal Website"
+    };
   }
-}
+};
 </script>
