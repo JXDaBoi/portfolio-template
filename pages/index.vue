@@ -31,11 +31,7 @@
       </template>
     </CareerWrapper>
     <!-- Achievement -->
-    <AchievementWrapper
-      project="Number of Project 5"
-      client="Number of Happy Clients 5"
-      award="Number of Awards 2"
-    />
+    <AchievementWrapper project="5" client="5" award="2"/>
     <!-- Portfolio -->
     <PortfolioWrapper>
       <template v-slot:portfolio>
