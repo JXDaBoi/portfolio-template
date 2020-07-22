@@ -11,7 +11,7 @@
     <!-- About Me -->
     <AboutWrapper
       aboutMe="Just a normal university student that is alone :'("
-      linkedInURL="Your LinkedIn URL Address"
+      linkedInURL="NA"
       languages="Chinese, English"
       nationality="Malaysian"
       interest="Badminton, Games :)"
